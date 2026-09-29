@@ -1,293 +1,289 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K' VI TÍNH - English Teaching Assistant Resume</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="K' VI TÍNH - English Teaching Assistant Internship Resume">
+<title>K' VI TÍNH | English Teaching Assistant</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root{
+  --navy:#173b8f;
+  --blue:#2858d6;
+  --indigo:#3d2aa9;
+  --ink:#172033;
+  --muted:#667085;
+  --soft:#f5f7fb;
+  --card:#ffffff;
+  --line:#e6eaf2;
+  --green:#16845b;
+  --shadow:0 12px 35px rgba(23,59,143,.09);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+html{scroll-padding-top:90px}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--soft);line-height:1.7}
+a{color:inherit}
+
+/* Reading progress */
+#progress{position:fixed;top:0;left:0;width:0;height:4px;background:linear-gradient(90deg,#4e78ff,#8c63ff);z-index:9999;box-shadow:0 0 12px rgba(78,120,255,.5)}
+
+/* Navigation */
+.navbar{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.91);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,40,80,.08)}
+.nav-inner{max-width:1180px;margin:auto;padding:0 22px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:800;text-decoration:none;color:var(--navy);letter-spacing:-.02em;white-space:nowrap}
+.brand span{color:var(--blue)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{position:relative;text-decoration:none;font-size:13px;font-weight:600;color:#5b6577;padding:10px 12px;border-radius:10px;transition:.25s}
+.nav-links a:hover,.nav-links a.active{color:var(--blue);background:#eef3ff}
+.nav-links a.active:after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:2px;border-radius:9px;background:var(--blue)}
+.menu-btn{display:none;border:0;background:#eef3ff;color:var(--navy);width:42px;height:42px;border-radius:10px;font-size:18px;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#183b8e 0%,#283f9f 48%,#3e2ca8 100%);color:white}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none;filter:blur(2px)}
+.hero:before{width:420px;height:420px;right:-140px;top:-180px;background:rgba(255,255,255,.07)}
+.hero:after{width:260px;height:260px;left:-110px;bottom:-160px;background:rgba(255,255,255,.06)}
+.hero-inner{position:relative;z-index:1;max-width:1180px;margin:auto;padding:64px 22px 58px;display:grid;grid-template-columns:240px 1fr;align-items:center;gap:48px}
+.hero-photo{display:flex;justify-content:center;align-items:flex-end}
+.hero-photo img{display:block;width:210px;height:auto;max-height:270px;object-fit:contain;filter:drop-shadow(0 18px 24px rgba(0,0,0,.2));animation:floatIn .8s ease both}
+.hero-content{animation:fadeUp .7s ease both}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:14px}
+.hero h1{font-size:clamp(38px,5vw,62px);line-height:1.03;margin:0;font-weight:800;letter-spacing:-.045em}
+.hero-role{font-size:clamp(18px,2vw,25px);color:#d6e1ff;margin:12px 0 22px;font-weight:500}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;max-width:850px}
+.contact-item{display:flex;align-items:center;gap:10px;font-size:14px;color:#edf2ff;min-width:0}
+.contact-item i{width:18px;text-align:center;color:#c7d6ff}
+.contact-item a{color:inherit;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+
+/* Main */
+main{max-width:1180px;margin:auto;padding:48px 22px 70px}
+.section{scroll-margin-top:90px;margin-bottom:34px}
+.section-title{display:flex;align-items:center;gap:11px;margin:0 0 20px;font-size:24px;color:var(--navy);letter-spacing:-.02em}
+.section-title i{font-size:19px;color:var(--blue)}
+.section-title:after{content:"";height:3px;flex:1;max-width:90px;background:linear-gradient(90deg,var(--blue),transparent);border-radius:99px;margin-left:5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:27px;box-shadow:var(--shadow);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(23,59,143,.12);border-color:#d7e0f4}
+.intro{font-size:15px;color:#526078;margin:0}.intro+.intro{margin-top:12px}
+.layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(290px,1fr);gap:30px;align-items:start}
+.left-stack,.right-stack{display:grid;gap:30px}
+
+/* Experience */
+.timeline{position:relative;margin-top:4px}
+.timeline:before{content:"";position:absolute;left:8px;top:4px;bottom:4px;width:2px;background:linear-gradient(#b9caf7,#e5e9f3)}
+.job{position:relative;padding-left:34px;margin-bottom:30px}.job:last-child{margin-bottom:0}
+.dot{position:absolute;left:0;top:7px;width:18px;height:18px;border-radius:50%;background:#fff;border:5px solid var(--blue);box-shadow:0 0 0 4px #edf2ff;z-index:2}
+.job-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}
+.job h3{margin:0;font-size:17px;line-height:1.35}.period{flex:none;font-size:11px;font-weight:700;color:#2351bd;background:#edf3ff;padding:5px 9px;border-radius:999px}
+.company{margin:5px 0 8px;color:#6a7487;font-size:13px;font-weight:600}
+.job ul,.activity ul{margin:0;padding-left:18px;color:#5d687b;font-size:14px}.job li,.activity li{margin:4px 0}
+
+/* Activity */
+.activity{padding:18px 0;border-bottom:1px solid var(--line)}.activity:first-child{padding-top:0}.activity:last-child{border-bottom:0;padding-bottom:0}
+.activity-head{display:flex;justify-content:space-between;gap:15px}.activity h3{margin:0;font-size:16px}.activity-year{font-size:11px;background:#f1f3f7;color:#687386;padding:4px 8px;border-radius:7px;white-space:nowrap}.activity-sub{margin:3px 0 8px;color:#2454c5;font-size:13px;font-style:italic}
+
+/* Sidebar */
+.side-card{padding:23px}
+.side-card h3{font-size:17px;margin:0 0 12px;color:var(--navy);display:flex;align-items:center;gap:9px}.side-card h3 i{color:var(--blue);font-size:15px}
+.education-name{font-weight:800;font-size:16px}.education-school{font-size:13px;color:#5f697c;margin-top:3px}.date{font-size:12px;color:var(--blue);font-weight:600;margin-top:8px}.note{font-size:12px;color:#7b8494;font-style:italic;margin-top:6px}
+.skills-group{margin-top:15px}.skills-group:first-of-type{margin-top:0}.skills-label{font-size:12px;font-weight:700;color:#667085;margin-bottom:8px}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{font-size:11px;padding:6px 9px;border-radius:8px;background:#f5f7fa;border:1px solid #e6e9ef;color:#5a6577;transition:.22s}.chip:hover{transform:translateY(-2px);border-color:#b8c8f4;background:#edf3ff;color:#2454c5}
+.level-row{display:flex;align-items:center;justify-content:space-between;gap:12px}.level{font-size:12px;font-weight:800;color:#11734f;background:#e8f7f0;padding:6px 10px;border-radius:999px}
+.list-clean{list-style:none;margin:0;padding:0}.list-clean li{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:#596477;padding:8px 0;border-bottom:1px solid #edf0f5}.list-clean li:last-child{border-bottom:0}.list-clean i{color:#1aa16d;margin-top:5px}
+.award{padding:11px 0;border-bottom:1px solid var(--line)}.award:last-child{border-bottom:0}.award strong{font-size:13px}.award p{font-size:12px;color:#697386;margin:3px 0 0}
+
+/* Quick navigation */
+.quick-nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.quick-nav a{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border-radius:10px;text-decoration:none;background:#fff;border:1px solid var(--line);color:#596477;font-size:12px;font-weight:700;transition:.25s}
+.quick-nav a:hover{color:var(--blue);border-color:#b9c8ef;transform:translateY(-2px);box-shadow:0 7px 18px rgba(23,59,143,.08)}
+
+/* Reveal animation */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+.delay-1{transition-delay:.08s}.delay-2{transition-delay:.16s}.delay-3{transition-delay:.24s}
+
+/* Back to top */
+#topBtn{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border:0;border-radius:50%;background:var(--navy);color:white;box-shadow:0 10px 25px rgba(20,45,110,.25);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:.3s;z-index:999}
+#topBtn.visible{opacity:1;visibility:visible;transform:none}
+#topBtn:hover{background:var(--blue);transform:translateY(-3px)}
+
+footer{background:#101b35;color:#9da8bd;text-align:center;padding:25px 20px;font-size:12px}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes floatIn{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:none}}
+
+@media(max-width:850px){
+  .nav-inner{height:62px}.menu-btn{display:block}.nav-links{position:absolute;left:14px;right:14px;top:69px;display:none;flex-direction:column;align-items:stretch;background:white;border:1px solid var(--line);border-radius:15px;padding:8px;box-shadow:0 15px 35px rgba(15,30,70,.12)}.nav-links.open{display:flex}.nav-links a{padding:12px}.nav-links a.active:after{display:none}
+  .hero-inner{grid-template-columns:1fr;text-align:center;padding-top:45px}.hero-photo{order:0}.hero-content{order:1}.hero-photo img{width:190px;max-height:250px}.contact-grid{text-align:left}.layout{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .brand{font-size:14px}.hero-inner{padding:38px 18px 42px}.hero h1{font-size:42px}.hero-role{font-size:17px}.contact-grid{grid-template-columns:1fr;gap:9px}.contact-item{font-size:13px}.quick-nav{gap:6px}.quick-nav a{font-size:11px;padding:8px 9px}.card{padding:21px;border-radius:16px}.section-title{font-size:21px}.job-head,.activity-head{flex-direction:column;gap:7px}.period,.activity-year{width:max-content}main{padding:34px 15px 55px}
+}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 leading-relaxed">
 
-    <!-- HEADER / HERO SECTION -->
-    <header class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-12 px-4 sm:px-6 lg:px-8 shadow-lg">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
-            <!-- Avatar -->
-            <div class="flex-shrink-0">
-                <img src="images/avatar.png" alt="K' Vi Tính" class="w-52 h-auto object-contain">
-            </div>
-            <!-- Info Header -->
-            <div class="text-center md:text-left flex-grow">
-                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">K' VI TÍNH</h1>
-                <p class="text-xl text-blue-200 mt-1 font-medium">ENGLISH TEACHING ASSISTANT INTERNSHIP</p>
-                
-                <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-blue-100">
-                    <div><i class="fa-solid fa-cake-candles w-5"></i> 27/01/2005 (Nam)</div>
-                    <div><i class="fa-solid fa-envelope w-5"></i> vitinh4917h@gmail.com</div>
-                    <div><i class="fa-solid fa-phone w-5"></i> 0986784050</div>
-                    <div><i class="fa-solid fa-location-dot w-5"></i> 1436 Trịnh Quang Nghị, Q. 8, TP.HCM</div>
-                    <div class="sm:col-span-2">
-                        <i class="fa-brands fa-facebook w-5"></i> 
-                        <a href="https://www.facebook.com/vi.tinh.441356" target="_blank" class="underline hover:text-white">https://www.facebook.com/vi.tinh.441356</a>
-                    </div>
-                </div>
-            </div>
+<body>
+<div id="progress"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="brand">K' <span>VI TÍNH</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Mở menu"><i class="fa-solid fa-bars"></i></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">Mục tiêu</a>
+      <a href="#experience">Kinh nghiệm</a>
+      <a href="#activities">Hoạt động</a>
+      <a href="#education">Học vấn</a>
+      <a href="#skills">Kỹ năng</a>
+      <a href="#achievements">Thành tích</a>
+      <a href="#contact">Liên hệ</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-photo">
+      <img src="images/avatar.png" alt="K' Vi Tính">
+    </div>
+    <div class="hero-content">
+      <div class="eyebrow"><i class="fa-solid fa-graduation-cap"></i> ENGLISH TEACHING ASSISTANT</div>
+      <h1>K' VI TÍNH</h1>
+      <p class="hero-role">English Teaching Assistant Internship</p>
+      <div class="contact-grid" id="contact">
+        <div class="contact-item"><i class="fa-solid fa-cake-candles"></i><span>27/01/2005 (Nam)</span></div>
+        <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:vitinh4917h@gmail.com">vitinh4917h@gmail.com</a></div>
+        <div class="contact-item"><i class="fa-solid fa-phone"></i><a href="tel:0986784050">0986784050</a></div>
+        <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>1436 Trịnh Quang Nghị, Q. 8, TP.HCM</span></div>
+        <div class="contact-item"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/vi.tinh.441356" target="_blank" rel="noopener">Facebook profile</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="quick-nav reveal">
+    <a href="#about"><i class="fa-solid fa-bullseye"></i> Mục tiêu</a>
+    <a href="#experience"><i class="fa-solid fa-briefcase"></i> Kinh nghiệm</a>
+    <a href="#activities"><i class="fa-solid fa-users"></i> Hoạt động</a>
+    <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Học vấn</a>
+    <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i> Kỹ năng</a>
+    <a href="#achievements"><i class="fa-solid fa-award"></i> Thành tích</a>
+  </div>
+
+  <div class="layout">
+    <div class="left-stack">
+      <section class="section reveal" id="about">
+        <h2 class="section-title"><i class="fa-solid fa-bullseye"></i> MỤC TIÊU NGHỀ NGHIỆP</h2>
+        <div class="card">
+          <p class="intro">Sinh viên năm cuối ngành Ngôn ngữ Anh tại Trường Đại học Hùng Vương TP.HCM, định hướng phát triển trong lĩnh vực giảng dạy tiếng Anh. Tôi mong muốn tìm kiếm cơ hội thực tập tại môi trường giáo dục để phát huy khả năng giao tiếp, thuyết trình và hỗ trợ người học, đồng thời tích lũy kinh nghiệm thực tế trong vai trò English Teaching Assistant.</p>
+          <p class="intro">Thông qua quá trình thực tập, tôi mong muốn phát triển kỹ năng hỗ trợ lớp học, tương tác với học viên và phối hợp cùng giáo viên. Về lâu dài, tôi hướng đến việc trở thành một giáo viên tiếng Anh chuyên nghiệp.</p>
         </div>
-    </header>
+      </section>
 
-    <!-- MAIN CONTAINER -->
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-        <!-- LEFT COLUMN (Main Content) -->
-        <div class="lg:col-span-2 space-y-8">
-            
-            <!-- MỤC TIÊU NGHỀ NGHIỆP -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-xl font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-bullseye"></i> MỤC TIÊU NGHỀ NGHIỆP
-                </h2>
-                <p class="text-slate-600">
-                    Sinh viên năm cuối ngành Ngôn ngữ Anh, có khả năng giao tiếp tiếng Anh, thuyết trình và làm việc nhóm, cũng như sử dụng AI. Đã tham gia các hoạt động học thuật, cuộc thi tiếng Anh và có cơ hội đảm nhiệm vai trò MC hỗ trợ điều phối workshop về giảng dạy tiếng Anh cho người học trẻ.
-                </p>
-                <p class="text-slate-600 mt-2">
-                    Mong muốn được thực tập tại môi trường giáo dục để tích lũy kinh nghiệm trợ giảng, phát triển kỹ năng hỗ trợ học viên và tìm hiểu thực tế về công việc giảng dạy. Định hướng phát triển lâu dài từ vị trí trợ giảng trở thành giáo viên tiếng Anh chuyên nghiệp.
-                </p>
-            </section>
-
-            <!-- KINH NGHIỆM LÀM VIỆC -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-xl font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-6 flex items-center gap-2">
-                    <i class="fa-solid fa-briefcase"></i> KINH NGHIỆM LÀM VIỆC
-                </h2>
-                <div class="space-y-6">
-
-                    <!-- TikTok -->
-                    <div class="relative pl-6 border-l-2 border-blue-200">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-2 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1">
-                            <h3 class="font-bold text-slate-800 text-lg">TIKTOK AFFILIATE / CONTENT CREATOR</h3>
-                            <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full w-max">2024 - 2026</span>
-                        </div>
-                        <p class="text-sm text-slate-500 font-medium mb-2">Tiktok</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Tự lên ý tưởng và xây dựng nội dung trên TikTok.</li>
-                            <li>Tìm hiểu xu hướng và nhu cầu của người xem.</li>
-                            <li>Chủ động quản lý công việc, thời gian và tiến độ cá nhân.</li>
-                            <li>Phát triển khả năng sáng tạo và tư duy nội dung.</li>
-                            <li>Rèn luyện khả năng truyền đạt thông tin ngắn gọn, dễ tiếp cận.</li>
-                        </ul>
-                    </div>
-
-                    <!-- AhaMove -->
-                    <div class="relative pl-6 border-l-2 border-blue-200">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-2 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1">
-                            <h3 class="font-bold text-slate-800 text-lg">AHAMOVE - DELIVERY PARTNER</h3>
-                            <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full w-max">2025 - 2026</span>
-                        </div>
-                        <p class="text-sm text-slate-500 font-medium mb-2">AhaMove</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Giao tiếp và tương tác với nhiều đối tượng khách hàng.</li>
-                            <li>Chủ động sắp xếp thời gian và quản lý công việc.</li>
-                            <li>Xử lý các tình huống phát sinh trong quá trình làm việc.</li>
-                            <li>Rèn luyện tinh thần trách nhiệm, sự chủ động và khả năng làm việc độc lập.</li>
-                            <li>Thích nghi với môi trường làm việc linh hoạt và có nhiều tình huống thực tế.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Winmart -->
-                    <div class="relative pl-6 border-l-2 border-blue-200">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-2 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1">
-                            <h3 class="font-bold text-slate-800 text-lg">NHÂN VIÊN BÁN LẺ</h3>
-                            <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full w-max">2023 - 2024</span>
-                        </div>
-                        <p class="text-sm text-slate-500 font-medium mb-2">WinMart</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Làm việc trong môi trường bán lẻ và giao tiếp trực tiếp với khách hàng.</li>
-                            <li>Hỗ trợ khách hàng trong quá trình mua sắm.</li>
-                            <li>Phối hợp với đồng nghiệp để hoàn thành công việc.</li>
-                            <li>Rèn luyện kỹ năng giao tiếp, trách nhiệm và tác phong chuyên nghiệp.</li>
-                        </ul>
-                    </div>
-
-                    <!-- YouTube -->
-                    <div class="relative pl-6 border-l-2 border-blue-200">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-2 border-white"></div>
-                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1">
-                            <h3 class="font-bold text-slate-800 text-lg">ANIMATION CONTENT CREATOR</h3>
-                            <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full w-max">2020 - 2026</span>
-                        </div>
-                        <p class="text-sm text-slate-500 font-medium mb-2">YouTube</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>Tự học và thực hiện các nội dung animation.</li>
-                            <li>Phát triển khả năng sáng tạo và tư duy hình ảnh.</li>
-                            <li>Chủ động tìm hiểu và sử dụng các công cụ sản xuất nội dung.</li>
-                            <li>Rèn luyện khả năng tự học và kiên trì hoàn thiện sản phẩm.</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- HOẠT ĐỘNG -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-xl font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-6 flex items-center gap-2">
-                    <i class="fa-solid fa-users"></i> HOẠT ĐỘNG
-                </h2>
-                <div class="space-y-6">
-
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-bold text-slate-800">MC / HỖ TRỢ ĐIỀU PHỐI CHƯƠNG TRÌNH</h3>
-                            <span class="text-xs bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded">2026</span>
-                        </div>
-                        <p class="text-sm text-blue-700 italic mt-0.5">Workshop “Teaching English to Young Learners: Is it really that difficult?”</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 mt-2 space-y-1">
-                            <li>Được giảng viên mời tham gia hỗ trợ điều phối chương trình workshop.</li>
-                            <li>Giới thiệu các diễn giả/người trình bày và các nội dung của chương trình.</li>
-                            <li>Mời và kết nối các phần trình bày theo trình tự chương trình.</li>
-                            <li>Rèn luyện kỹ năng giao tiếp, nói trước đám đông và xử lý tình huống trong sự kiện.</li>
-                        </ul>
-                    </div>
-
-                    <div class="border-t pt-4">
-                        <div class="flex justify-between items-start">
-                            <h3 class="font-bold text-slate-800">HOẠT ĐỘNG CÂU LẠC BỘ</h3>
-                            <span class="text-xs bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded">2026</span>
-                        </div>
-                        <p class="text-sm text-blue-700 italic mt-0.5">CLB Tiếng Anh • CLB Giải trí • Hoạt động thể thao</p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 mt-2 space-y-1">
-                            <li>Tham gia các hoạt động tập thể và ngoại khóa tại trường.</li>
-                            <li>Phát triển kỹ năng giao tiếp và làm việc nhóm.</li>
-                            <li>Rèn luyện khả năng phối hợp với các thành viên trong hoạt động chung.</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
+      <section class="section reveal delay-1" id="experience">
+        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> KINH NGHIỆM LÀM VIỆC</h2>
+        <div class="card timeline">
+          <article class="job">
+            <span class="dot"></span><div class="job-head"><h3>TIKTOK AFFILIATE / CONTENT CREATOR</h3><span class="period">2024 - 2026</span></div>
+            <p class="company">TikTok</p><ul><li>Tự lên ý tưởng và xây dựng nội dung trên TikTok.</li><li>Tìm hiểu xu hướng và nhu cầu của người xem.</li><li>Chủ động quản lý công việc, thời gian và tiến độ cá nhân.</li><li>Phát triển khả năng sáng tạo và tư duy nội dung.</li><li>Rèn luyện khả năng truyền đạt thông tin ngắn gọn, dễ tiếp cận.</li></ul>
+          </article>
+          <article class="job">
+            <span class="dot"></span><div class="job-head"><h3>AHAMOVE - DELIVERY PARTNER</h3><span class="period">2025 - 2026</span></div>
+            <p class="company">AhaMove</p><ul><li>Giao tiếp và tương tác với nhiều đối tượng khách hàng.</li><li>Chủ động sắp xếp thời gian và quản lý công việc.</li><li>Xử lý các tình huống phát sinh trong quá trình làm việc.</li><li>Rèn luyện tinh thần trách nhiệm, sự chủ động và khả năng làm việc độc lập.</li><li>Thích nghi với môi trường làm việc linh hoạt và có nhiều tình huống thực tế.</li></ul>
+          </article>
+          <article class="job">
+            <span class="dot"></span><div class="job-head"><h3>NHÂN VIÊN BÁN LẺ</h3><span class="period">2023 - 2024</span></div>
+            <p class="company">WinMart</p><ul><li>Làm việc trong môi trường bán lẻ và giao tiếp trực tiếp với khách hàng.</li><li>Hỗ trợ khách hàng trong quá trình mua sắm.</li><li>Phối hợp với đồng nghiệp để hoàn thành công việc.</li><li>Rèn luyện kỹ năng giao tiếp, trách nhiệm và tác phong chuyên nghiệp.</li></ul>
+          </article>
+          <article class="job">
+            <span class="dot"></span><div class="job-head"><h3>ANIMATION CONTENT CREATOR</h3><span class="period">2020 - 2026</span></div>
+            <p class="company">YouTube</p><ul><li>Tự học và thực hiện các nội dung animation.</li><li>Phát triển khả năng sáng tạo và tư duy hình ảnh.</li><li>Chủ động tìm hiểu và sử dụng các công cụ sản xuất nội dung.</li><li>Rèn luyện khả năng tự học và kiên trì hoàn thiện sản phẩm.</li></ul>
+          </article>
         </div>
+      </section>
 
-        <!-- RIGHT COLUMN (Sidebar) -->
-        <div class="space-y-8">
-
-            <!-- HỌC VẤN -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-lg font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-graduation-cap"></i> HỌC VẤN
-                </h2>
-                <div>
-                    <h3 class="font-bold text-slate-800">Ngành Ngôn Ngữ Anh</h3>
-                    <p class="text-sm text-slate-600">Trường Đại Học Hùng Vương TPHCM</p>
-                    <p class="text-xs text-blue-600 mt-1"><i class="fa-regular fa-calendar"></i> 2023 - 2027</p>
-                    <p class="text-xs text-slate-500 mt-2 italic">Hiện tại đang là sinh viên năm cuối</p>
-                </div>
-            </section>
-
-            <!-- KỸ NĂNG -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-lg font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-screwdriver-wrench"></i> CÁC KỸ NĂNG
-                </h2>
-                
-                <div class="mb-4">
-                    <h3 class="text-sm font-semibold text-slate-700 mb-2">Tin học & Công nghệ:</h3>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md border">Microsoft Word</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md border">Microsoft Excel</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md border">Microsoft PowerPoint</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md border">Canva</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md border">AI Tools</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md border">Animation</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md border">Unity / C#</span>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-sm font-semibold text-slate-700 mb-2">Giao tiếp & Giảng dạy:</h3>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-md border border-blue-100">Tiếng Anh giao tiếp</span>
-                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-md border border-blue-100">Thuyết trình</span>
-                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-md border border-blue-100">Public Speaking</span>
-                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-md border border-blue-100">Làm việc nhóm</span>
-                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-md border border-blue-100">Làm việc độc lập</span>
-                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-md border border-blue-100">Xử lý tình huống</span>
-                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-md border border-blue-100">Hỗ trợ học tiếng Anh</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- TIẾNG ANH -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-lg font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-language"></i> TIẾNG ANH
-                </h2>
-                <div class="flex justify-between items-center">
-                    <span class="text-sm font-medium text-slate-700">Trình độ:</span>
-                    <span class="text-sm font-bold bg-green-100 text-green-800 px-3 py-1 rounded-full">B2 – C1 (Tự đánh giá)</span>
-                </div>
-            </section>
-
-            <!-- CHỨNG CHỈ -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-lg font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-certificate"></i> CHỨNG CHỈ
-                </h2>
-                <ul class="space-y-2 text-sm text-slate-700">
-                    <li class="flex items-center gap-2"><i class="fa-regular fa-circle-check text-green-600"></i> MOS: Microsoft Word</li>
-                    <li class="flex items-center gap-2"><i class="fa-regular fa-circle-check text-green-600"></i> MOS: Microsoft Excel</li>
-                    <li class="flex items-center gap-2"><i class="fa-regular fa-circle-check text-green-600"></i> MOS: Microsoft PowerPoint</li>
-                </ul>
-            </section>
-
-            <!-- DANH HIỆU & GIẢI THƯỞNG -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-lg font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-award"></i> GIẢI THƯỞNG
-                </h2>
-                <div class="space-y-3 text-sm">
-                    <div>
-                        <p class="font-bold text-slate-800">NHỊP CẦU NGÔN NGỮ</p>
-                        <p class="text-slate-600">Đạt Giải Nhì tại cuộc thi Nhịp cầu Ngôn ngữ</p>
-                    </div>
-                    <div class="border-t pt-2">
-                        <p class="font-bold text-slate-800">Sinh viên ưu tú</p>
-                        <p class="text-slate-600">Đạt danh hiệu sinh viên ưu tú (2023 - 2025 - 2026)</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SỞ THÍCH -->
-            <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                <h2 class="text-lg font-bold text-blue-900 border-b-2 border-blue-600 pb-2 mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-heart"></i> SỞ THÍCH
-                </h2>
-                <div class="flex flex-wrap gap-2 text-xs">
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-slate-600">Technology</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-slate-600">Teaching English</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-slate-600">Creative Content</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-slate-600">Games</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-slate-600">Animation Creator</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-slate-600">Music Creator</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-slate-600">Play Guitar, Piano</span>
-                </div>
-            </section>
-
+      <section class="section reveal delay-2" id="activities">
+        <h2 class="section-title"><i class="fa-solid fa-users"></i> HOẠT ĐỘNG</h2>
+        <div class="card">
+          <article class="activity"><div class="activity-head"><h3>MC / HỖ TRỢ ĐIỀU PHỐI CHƯƠNG TRÌNH</h3><span class="activity-year">2026</span></div><p class="activity-sub">Workshop “Teaching English to Young Learners: Is it really that difficult?”</p><ul><li>Được giảng viên mời tham gia hỗ trợ điều phối chương trình workshop.</li><li>Giới thiệu các diễn giả/người trình bày và các nội dung của chương trình.</li><li>Mời và kết nối các phần trình bày theo trình tự chương trình.</li><li>Rèn luyện kỹ năng giao tiếp, nói trước đám đông và xử lý tình huống trong sự kiện.</li></ul></article>
+          <article class="activity"><div class="activity-head"><h3>HOẠT ĐỘNG CÂU LẠC BỘ</h3><span class="activity-year">2026</span></div><p class="activity-sub">CLB Tiếng Anh • CLB Giải trí • Hoạt động thể thao</p><ul><li>Tham gia các hoạt động tập thể và ngoại khóa tại trường.</li><li>Phát triển kỹ năng giao tiếp và làm việc nhóm.</li><li>Rèn luyện khả năng phối hợp với các thành viên trong hoạt động chung.</li></ul></article>
         </div>
-    </main>
+      </section>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-800 text-slate-400 text-center py-6 text-sm mt-12">
-        <p>© 2026 K' Vi Tính - Resume Website</p>
-    </footer>
+    <aside class="right-stack">
+      <section class="section reveal" id="education">
+        <div class="card side-card"><h3><i class="fa-solid fa-graduation-cap"></i> HỌC VẤN</h3><div class="education-name">Ngành Ngôn Ngữ Anh</div><div class="education-school">Trường Đại Học Hùng Vương TPHCM</div><div class="date"><i class="fa-regular fa-calendar"></i> 2023 - 2027</div><div class="note">Hiện tại đang là sinh viên năm cuối</div></div>
+      </section>
 
+      <section class="section reveal delay-1" id="skills">
+        <div class="card side-card"><h3><i class="fa-solid fa-screwdriver-wrench"></i> CÁC KỸ NĂNG</h3>
+          <div class="skills-group"><div class="skills-label">Tin học & Công nghệ</div><div class="chips"><span class="chip">Microsoft Word</span><span class="chip">Microsoft Excel</span><span class="chip">Microsoft PowerPoint</span><span class="chip">Canva</span><span class="chip">AI Tools</span><span class="chip">Animation</span><span class="chip">Unity / C#</span></div></div>
+          <div class="skills-group"><div class="skills-label">Giao tiếp & Giảng dạy</div><div class="chips"><span class="chip">Tiếng Anh giao tiếp</span><span class="chip">Thuyết trình</span><span class="chip">Public Speaking</span><span class="chip">Làm việc nhóm</span><span class="chip">Làm việc độc lập</span><span class="chip">Xử lý tình huống</span><span class="chip">Hỗ trợ học tiếng Anh</span></div></div>
+        </div>
+      </section>
+
+      <section class="section reveal delay-2">
+        <div class="card side-card"><h3><i class="fa-solid fa-language"></i> TIẾNG ANH</h3><div class="level-row"><span style="font-size:13px;font-weight:600">Trình độ</span><span class="level">B2 – C1 (Tự đánh giá)</span></div></div>
+      </section>
+
+      <section class="section reveal" id="achievements">
+        <div class="card side-card"><h3><i class="fa-solid fa-certificate"></i> CHỨNG CHỈ</h3><ul class="list-clean"><li><i class="fa-regular fa-circle-check"></i> MOS: Microsoft Word</li><li><i class="fa-regular fa-circle-check"></i> MOS: Microsoft Excel</li><li><i class="fa-regular fa-circle-check"></i> MOS: Microsoft PowerPoint</li></ul></div>
+      </section>
+
+      <section class="section reveal delay-1">
+        <div class="card side-card"><h3><i class="fa-solid fa-award"></i> GIẢI THƯỞNG</h3><div class="award"><strong>NHỊP CẦU NGÔN NGỮ</strong><p>Đạt Giải Nhì tại cuộc thi Nhịp cầu Ngôn ngữ</p></div><div class="award"><strong>Sinh viên ưu tú</strong><p>Đạt danh hiệu sinh viên ưu tú (2023 - 2025 - 2026)</p></div></div>
+      </section>
+
+      <section class="section reveal delay-2">
+        <div class="card side-card"><h3><i class="fa-solid fa-heart"></i> SỞ THÍCH</h3><div class="chips"><span class="chip">Technology</span><span class="chip">Teaching English</span><span class="chip">Creative Content</span><span class="chip">Games</span><span class="chip">Animation Creator</span><span class="chip">Music Creator</span><span class="chip">Play Guitar, Piano</span></div></div>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<button id="topBtn" aria-label="Lên đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
+<footer><p>© 2026 K' Vi Tính - Resume Website</p></footer>
+
+<script>
+// Mobile navigation
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+// Scroll reveal
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// Reading progress + back to top
+const progress=document.getElementById('progress');
+const topBtn=document.getElementById('topBtn');
+function updateScroll(){
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  progress.style.width=(max>0?(window.scrollY/max)*100:0)+'%';
+  topBtn.classList.toggle('visible',window.scrollY>450);
+}
+window.addEventListener('scroll',updateScroll,{passive:true});
+updateScroll();
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+// Highlight the navigation item for the section currently on screen
+const sections=[...document.querySelectorAll('main .section[id]')];
+const navItems=[...document.querySelectorAll('.nav-links a')];
+const activeObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      navItems.forEach(item=>item.classList.toggle('active',item.getAttribute('href')==='#'+entry.target.id));
+    }
+  })
+},{rootMargin:'-25% 0px -60% 0px',threshold:0});
+sections.forEach(section=>activeObserver.observe(section));
+</script>
 </body>
 </html>
